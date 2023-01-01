@@ -1,0 +1,9 @@
+name: demo-action
+description: Builds and submits program to a multisig wallet
+author: 0x
+branding:
+  icon: 'paperclip'
+  color: 'white'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

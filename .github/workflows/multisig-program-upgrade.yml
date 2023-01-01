@@ -1,12 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# solana anchor Anchor is a framework for Solana's Sealevel runtime
-# providing several convenient developer tools for writing smart contracts.
-# More details at https://github.com/coral-xyz/anchor
-# To use this action, you must provide a keypair that has sufficient tokens, 
-# shared object filepath, and program id of the program that is upgrading.
+
 name: solana anchor program upgrade
 
 on:
