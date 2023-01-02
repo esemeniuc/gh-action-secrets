@@ -9,16 +9,16 @@ on:
     branches: ["main"]
 
 jobs:
-#  solana-anchor-program-upgrade:
-#    name: Run anchor upgrade
-#    runs-on: ubuntu-latest
+  solana-anchor-program-upgrade:
+    name: Run anchor upgrade
+    runs-on: ubuntu-latest
 #    container: projectserum/build:v0.25.0
-#    env:
-#      HOME: /root
-#      ENV_SECRET: ${{ secrets.MY_SECRET }}
-#      PROGRAM_FILEPATH: target/deploy/gh_action_scrects.so
-#      CLUSTER: testnet
-#      PROGRAM_ID: 6zdDmuQg36ytdxeXYG6zoYdiiWVPXqao3Fvp2BbfV7o
+    env:
+      HOME: /root
+      ENV_SECRET: ${{ secrets.MY_SECRET }}
+      PROGRAM_FILEPATH: target/deploy/gh_action_scrects.so
+      CLUSTER: testnet
+      PROGRAM_ID: 6zdDmuQg36ytdxeXYG6zoYdiiWVPXqao3Fvp2BbfV7o
 
     steps:
 #      - name: Checkout code
@@ -33,7 +33,7 @@ jobs:
 #         run: anchor upgrade $PROGRAM_FILEPATH --provider.cluster $CLUSTER --program-id $PROGRAM_ID
         
       - name: squads-multisig-program-upgrade
-        uses: esemeniuc/container-template1@v0.0.4
+        uses: esemeniuc/container-template1@v0.0.5
 
 # solana deploy
 # create squad
