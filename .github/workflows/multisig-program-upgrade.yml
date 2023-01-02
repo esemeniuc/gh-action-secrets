@@ -9,22 +9,22 @@ on:
     branches: ["main"]
 
 jobs:
-  solana-anchor-program-upgrade:
-    name: Run anchor upgrade
-    runs-on: ubuntu-latest
-    container: projectserum/build:v0.25.0
-    env:
-      HOME: /root
-      ENV_SECRET: ${{ secrets.MY_SECRET }}
-      PROGRAM_FILEPATH: target/deploy/gh_action_scrects.so
-      CLUSTER: testnet
-      PROGRAM_ID: 6zdDmuQg36ytdxeXYG6zoYdiiWVPXqao3Fvp2BbfV7o
+#  solana-anchor-program-upgrade:
+#    name: Run anchor upgrade
+#    runs-on: ubuntu-latest
+#    container: projectserum/build:v0.25.0
+#    env:
+#      HOME: /root
+#      ENV_SECRET: ${{ secrets.MY_SECRET }}
+#      PROGRAM_FILEPATH: target/deploy/gh_action_scrects.so
+#      CLUSTER: testnet
+#      PROGRAM_ID: 6zdDmuQg36ytdxeXYG6zoYdiiWVPXqao3Fvp2BbfV7o
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup Yarn
-        run: yarn
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#      - name: Setup Yarn
+#        run: yarn
 #       - name: Setup wallet
 #         run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
 #       - name: Run anchor build
