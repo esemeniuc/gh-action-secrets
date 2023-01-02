@@ -25,12 +25,16 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Yarn
         run: yarn
-      - name: Setup wallet
-        run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
-      - name: Run anchor build
-        run: anchor build
-      - name: Run anchor upgrade to testnet
-        run: anchor upgrade $PROGRAM_FILEPATH --provider.cluster $CLUSTER --program-id $PROGRAM_ID
+#       - name: Setup wallet
+#         run: echo ${{ secrets.SOLANA_KEYPAIR_JSON }} > $HOME/.config/solana/id.json
+#       - name: Run anchor build
+#         run: anchor build
+#       - name: Run anchor upgrade to testnet
+#         run: anchor upgrade $PROGRAM_FILEPATH --provider.cluster $CLUSTER --program-id $PROGRAM_ID
+        
+      - name: squads-multisig-program-upgrade
+        uses: esemeniuc/container-template1@v0.0.2
+
 # solana deploy
 # create squad
 # add managed program in ui
