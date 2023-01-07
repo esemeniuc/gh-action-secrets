@@ -1,5 +1,5 @@
 
-name: solana anchor program upgrade
+name: multisig program upgrade
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     branches: ["main"]
 
 jobs:
-  solana-anchor-program-upgrade:
+  multisig-program-upgrade:
     name: Run anchor upgrade
     runs-on: ubuntu-latest
 #    container: projectserum/build:v0.25.0
@@ -33,7 +33,7 @@ jobs:
 #         run: anchor upgrade $PROGRAM_FILEPATH --provider.cluster $CLUSTER --program-id $PROGRAM_ID
         
       - name: squads-multisig-program-upgrade
-        uses: esemeniuc/container-template1@v0.0.5
+        uses: esemeniuc/container-template1@v0.0.6
 
 # solana deploy
 # create squad
