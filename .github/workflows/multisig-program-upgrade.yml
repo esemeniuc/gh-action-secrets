@@ -33,7 +33,7 @@ jobs:
 #         run: anchor upgrade $PROGRAM_FILEPATH --provider.cluster $CLUSTER --program-id $PROGRAM_ID
         
       - name: squads-multisig-program-upgrade
-        uses: esemeniuc/container-template1@v0.0.6
+        uses: esemeniuc/container-template1@v0.0.7
 
 # solana deploy
 # create squad
