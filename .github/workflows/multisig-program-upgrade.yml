@@ -34,6 +34,8 @@ jobs:
         
       - name: squads-multisig-program-upgrade
         uses: esemeniuc/container-template1@v0.0.10
+        with:
+          keypair_json: ${{ secrets.INPUT_KEYPAIR_JSON }}
 
 # solana deploy
 # create squad
